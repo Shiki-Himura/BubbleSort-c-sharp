@@ -6,7 +6,8 @@ namespace bubblesort
     {
         static void Main(string[] args)
         {
-            int[] arr = CreateArray();
+            int size = 300;
+            int[] arr = CreateArray(size);
 
             Console.WriteLine("Array: ");
             PrintArray(arr);
@@ -18,11 +19,11 @@ namespace bubblesort
             Console.Read();
         }
 
-        static int[] CreateArray()
+        static int[] CreateArray(int size)
         {
             Random rng = new();
 
-            int[] array = new int[25];
+            int[] array = new int[size];
 
             for (int i = 0; i < array.Length; i++)
             {
