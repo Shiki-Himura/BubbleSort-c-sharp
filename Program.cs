@@ -8,12 +8,7 @@ namespace bubblesort
         {
             int size = 500;
             int[] arr = CreateArray(size);
-
-            Console.WriteLine("Array: ");
-            PrintArray(arr);
-            Console.WriteLine("\n" + "------------------------------------------------------");
-
-            Console.WriteLine("Sorted Array: ");
+            
             BubbleSort(arr);
             PrintArray(arr);
             Console.Read();
